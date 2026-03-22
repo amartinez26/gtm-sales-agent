@@ -1,0 +1,15 @@
+# Secrets (NEVER upload these)
+.env
+
+# Python Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Local Databases & Data
+chroma_db/
+data/
+
+# OS specific
+.DS_Store
+Thumbs.db

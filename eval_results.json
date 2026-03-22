@@ -1,0 +1,23 @@
+[
+    {
+        "case_id": 1,
+        "question": "Where did Stihl open their new battery plant in 2025?",
+        "expected_keyword": "Oradea, Romania",
+        "ai_answer": "As part of their strategic ramp-up for 2026, STIHL opened a new \u20ac125M battery-exclusive plant in **Oradea, Romania**, in October 2025. \n\nThis facility is a cornerstone of their \"Dual Technology Leadership\" strategy, specifically designed to help the company reach its goal of having battery-powered tools account for 35% of global sales by 2027.",
+        "timestamp": "2026-03-21T20:35:39.503974"
+    },
+    {
+        "case_id": 2,
+        "question": "What is the specific sales goal for battery tools by 2027?",
+        "expected_keyword": "35%",
+        "ai_answer": "According to the STIHL 2026 Strategy, the specific goal is for **35% of global sales** to be battery-powered tools by 2027.",
+        "timestamp": "2026-03-21T20:35:41.365365"
+    },
+    {
+        "case_id": 3,
+        "question": "What is Stihl's 'Dual Technology' strategy?",
+        "expected_keyword": "gasoline and battery",
+        "ai_answer": "Stihl\u2019s **\"Dual Technology Leadership\"** is a core strategic pivot designed to bridge their historical dominance in gasoline-powered tools with the future of electrification. \n\nAs a strategic GTM Sales Agent, I would break down the strategy into these two primary pillars:\n\n1.  **Maintaining Combustion Leadership:** Stihl is not abandoning its roots. They continue to invest in and maintain their market-leading position in gasoline (combustion) technology, ensuring they support the \"Heritage\" aspect of their 2026 centenary theme.\n2.  **Aggressive Battery Pivot:** Simultaneously, the company is aggressively scaling its battery-powered portfolio. This is backed by significant infrastructure investments, such as the **\u20ac125M battery-exclusive plant in Oradea, Romania** (opened October 2025), to meet their global goal of having **35% of sales come from battery tools by 2027.**\n\nIn short, the strategy is a \"Heritage meets High-Tech\" approach that allows Stihl to serve traditional heavy-duty professional needs while capturing the rapidly growing demand for sustainable, battery-operated equipment.",
+        "timestamp": "2026-03-21T20:35:44.494717"
+    }
+]
