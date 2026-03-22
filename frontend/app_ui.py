@@ -1,8 +1,16 @@
+import sys
+import os
 import streamlit as st
 import requests
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from config import PITCH_KEY  # Import our single source of truth
 
 # Page Config
-st.set_page_config(page_title="GTM Sales Agent", page_icon="🤖", layout="centered")
+st.set_page_config(
+    page_title="GTM Sales Agent", 
+    page_icon="🤖", 
+    layout="centered"
+)
 
 # Custom Styling
 st.markdown("""
@@ -34,9 +42,15 @@ if st.button("Generate Pitch"):
                 
                 if response.status_code == 200:
                     result = response.json()
-                    st.success("Analysis Complete!")
-                    st.markdown("### 📝 Generated Pitch")
-                    st.write(result.get("pitch", "No pitch generated."))
+                    st.success("Analysis Complete!")                  
+                    
+                    # USE THE CONFIG KEY: This ensures we always find the right data
+                    pitch_content = result.get(PITCH_KEY)
+                    if pitch_content:
+                        st.markdown("### 📝 Generated Pitch")
+                        st.write(pitch_content)
+                    else:
+                        st.error("The backend sent a response, but the pitch content was empty.")
                 else:
                     st.error(f"Error: The backend returned status code {response.status_code}")
             except Exception as e:
