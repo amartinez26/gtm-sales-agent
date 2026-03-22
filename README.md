@@ -6,12 +6,12 @@ A high-performance Sales Agent powered by **Gemini 3 Flash** and **LangChain**, 
 This project implements a **Retrieval-Augmented Generation (RAG)** architecture. By leveraging the low-latency reasoning of the **Gemini 3 Flash** model, the agent can analyze complex strategy documents (e.g., STIHL 2026 Strategy) and generate actionable, context-aware sales pitches in real-time.
 
 ## 🛠️ Tech Stack
-* **LLM:** Google Gemini 3 Flash (Optimized for low-latency agentic reasoning)
+* **LLM:** Google Gemini 3 Flash (Optimized for low-latency reasoning)
 * **Orchestration:** LangChain & LangGraph
 * **Vector Database:** ChromaDB
-* **API Framework:** FastAPI
+* **Backend API:** FastAPI (Containerized with Docker)
+* **Frontend UI:** Streamlit (Python-native dashboard)
 * **Infrastructure:** Docker (Optimized for CPU-only environments)
-* **Environment:** WSL2 (Ubuntu backend)
 
 ## ✨ Key Features
 * **Model Optimization:** Utilizes **Gemini 3 Flash** to minimize "Time-to-First-Token," ensuring a snappy, responsive experience for sales teams.
@@ -24,5 +24,13 @@ This project implements a **Retrieval-Augmented Generation (RAG)** architecture.
 ### Running with Docker (Recommended)
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/gtm-sales-agent.git](https://github.com/YOUR_USERNAME/gtm-sales-agent.git)
+   git clone [https://github.com/amartinez26/gtm-sales-agent.git](https://github.com/amartinez26/gtm-sales-agent.git)
    cd gtm-sales-agent
+   docker build -t gtm-sales-agent .
+   docker run -p 8000:8000 --env-file .env gtm-sales-agent
+
+# Install UI dependencies
+   pip install streamlit requests
+
+# Launch the dashboard
+  streamlit run frontend/app_ui.py
