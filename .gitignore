@@ -9,6 +9,11 @@ __pycache__/
 # Local Databases & Data
 chroma_db/
 data/
+quarantine/
+
+# Ingest audit log and manifest (contain local file paths)
+ingest_errors.log
+manifest.json
 
 # OS specific
 .DS_Store
